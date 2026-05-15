@@ -1,0 +1,75 @@
+payload:
+  # Converted from Quantumult X Filter
+  # Rule Name: Apple
+  # Converted At: 2026-05-15 21:38:29
+
+  # NAME: Discord
+  # AUTHOR: steak
+  # TYPE: Quantumult X Filter
+  # DESCRIPTION: Discord 语音 / 社区 / CDN 分流规则
+  # SOURCE: Split from GlobalServices.list
+  # UPDATED: 2026-05-11
+  #
+  # ================================
+  # 使用说明
+  # ================================
+  # 1. 文件名：Discord.list
+  # 2. 适用于：Quantumult X [filter_remote]
+  # 3. 策略组名称：Discord
+  # 4. 本文件由原 GlobalServices.list 拆分，便于后续单独维护
+  # 5. IP-CIDR / IP6-CIDR 已追加 no-resolve
+  #
+  # QX 远程订阅示例：
+  # https://raw.githubusercontent.com/reverie1988/QX/refs/heads/main/Rules/Discord.list, tag=Discord, force-policy=Discord, update-interval=172800, opt-parser=false, enabled=true
+  #
+  # ================================
+  # 规则统计
+  # ================================
+  # HOST: 0
+  # HOST-SUFFIX: 27
+  # HOST-KEYWORD: 1
+  # USER-AGENT: 0
+  # IP-CIDR: 0
+  # IP6-CIDR: 0
+  # IP-ASN: 0
+  # TOTAL: 28
+  #
+  # ================================
+  # 规则内容
+  # ================================
+  # Discord
+  # ================================
+  - DOMAIN-SUFFIX,airhorn.solutions
+  - DOMAIN-SUFFIX,airhornbot.com
+  - DOMAIN-SUFFIX,bigbeans.solutions
+  - DOMAIN-SUFFIX,dis.gd
+  - DOMAIN-SUFFIX,discord-activities.com
+  - DOMAIN-SUFFIX,discord-attachments-uploads-prd.storage.googleapis.com
+  - DOMAIN-SUFFIX,discord.co
+  - DOMAIN-SUFFIX,discord.com
+  - DOMAIN-SUFFIX,discord.design
+  - DOMAIN-SUFFIX,discord.dev
+  - DOMAIN-SUFFIX,discord.gg
+  - DOMAIN-SUFFIX,discord.gift
+  - DOMAIN-SUFFIX,discord.gifts
+  - DOMAIN-SUFFIX,discord.media
+  - DOMAIN-SUFFIX,discord.new
+  - DOMAIN-SUFFIX,discord.store
+  - DOMAIN-SUFFIX,discord.tools
+  - DOMAIN-SUFFIX,discordactivities.com
+  - DOMAIN-SUFFIX,discordapp.com
+  - DOMAIN-SUFFIX,discordapp.io
+  - DOMAIN-SUFFIX,discordapp.net
+  - DOMAIN-SUFFIX,discordapp.page.link
+  - DOMAIN-SUFFIX,discordcdn.com
+  - DOMAIN-SUFFIX,discordmerch.com
+  - DOMAIN-SUFFIX,discordpartygames.com
+  - DOMAIN-SUFFIX,discordsays.com
+  - DOMAIN-SUFFIX,discordstatus.com
+  - DOMAIN-KEYWORD,discord
+
+  # ================================
+
+  # Total Raw Rules: 28
+  # Converted Rules: 28
+  # Unsupported Rules: 0
