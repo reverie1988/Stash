@@ -1,0 +1,144 @@
+payload:
+  # Converted from Quantumult X Filter
+  # Rule Name: Apple
+  # Converted At: 2026-05-15 21:43:51
+
+  # NAME: YouTube
+  # AUTHOR: steak
+  # TYPE: Quantumult X Filter
+  # DESCRIPTION: YouTube / YouTube Music / YouTube Kids / Googlevideo / ytimg 相关分流规则
+  # SOURCE: Based on blackmatrix7/ios_rule_script YouTube rules
+  # UPDATED: 2026-05-11
+  #
+  # ================================
+  # 使用说明
+  # ================================
+  # 1. 文件名建议：YouTube.list
+  # 2. 适用于：Quantumult X [filter_remote]
+  # 3. 策略组名称：YouTube
+  # 4. 如果你的策略组不是 YouTube，请在 QX 的 force-policy 中指定实际策略组
+  # 5. 不建议把整个 googleapis.com / googleusercontent.com / gstatic.com 全部放进 YouTube
+  #    否则可能会影响 Gemini / Google AI / Google 登录 / Google 其他服务
+  #
+  # QX 远程订阅示例：
+  # https://raw.githubusercontent.com/你的用户名/你的仓库/main/Rules/YouTube.list, tag=YouTube, force-policy=YouTube, update-interval=86400, opt-parser=false, enabled=true
+  #
+  # ================================
+  # 规则统计：精简增强版
+  # ================================
+  # HOST: 3
+  # HOST-SUFFIX: 37
+  # HOST-WILDCARD: 3
+  # HOST-KEYWORD: 2
+  # USER-AGENT: 7
+  # IP-CIDR: 2
+  # IP6-CIDR: 1
+  #
+  # ================================
+  # YouTube 精确域名
+  # ================================
+
+  - DOMAIN,music.youtube.com
+  - DOMAIN,youtubei.googleapis.com
+  - DOMAIN,yt3.ggpht.com
+
+  # ================================
+  # YouTube 核心域名
+  # ================================
+
+  - DOMAIN-SUFFIX,youtube.com
+  - DOMAIN-SUFFIX,youtu.be
+  - DOMAIN-SUFFIX,yt.be
+  - DOMAIN-SUFFIX,ytimg.com
+  - DOMAIN-SUFFIX,googlevideo.com
+  - DOMAIN-SUFFIX,youtube-nocookie.com
+  - DOMAIN-SUFFIX,withyoutube.com
+  - DOMAIN-SUFFIX,ggpht.com
+  - DOMAIN-SUFFIX,ggpht.cn
+  - DOMAIN-SUFFIX,gvt1.com
+  - DOMAIN-SUFFIX,gvt2.com
+  - DOMAIN-SUFFIX,video.google.com
+
+  # ================================
+  # YouTube API / 嵌入 / 播放器
+  # ================================
+
+  - DOMAIN-SUFFIX,youtube.googleapis.com
+  - DOMAIN-SUFFIX,youtubei.googleapis.com
+  - DOMAIN-SUFFIX,youtubeembeddedplayer.googleapis.com
+  - DOMAIN-SUFFIX,youtube-ui.l.google.com
+  - DOMAIN-SUFFIX,wide-youtube.l.google.com
+
+  # ================================
+  # YouTube 衍生服务
+  # ================================
+
+  - DOMAIN-SUFFIX,youtubekids.com
+  - DOMAIN-SUFFIX,youtubegaming.com
+  - DOMAIN-SUFFIX,youtubemobilesupport.com
+  - DOMAIN-SUFFIX,youtubeeducation.com
+  - DOMAIN-SUFFIX,youtubefanfest.com
+
+  # ================================
+  # YouTube Go
+  # ================================
+
+  - DOMAIN-SUFFIX,youtubego.com
+  - DOMAIN-SUFFIX,youtubego.co.id
+  - DOMAIN-SUFFIX,youtubego.co.in
+  - DOMAIN-SUFFIX,youtubego.com.br
+  - DOMAIN-SUFFIX,youtubego.id
+  - DOMAIN-SUFFIX,youtubego.in
+
+  # ================================
+  # YouTube 国际化域名补充
+  # ================================
+  # blackmatrix7 原规则中包含大量 youtube.xx / youtube.com.xx 地区域名
+  # 这里用 HOST-WILDCARD 收敛处理，减少规则数量
+
+  - DOMAIN-SUFFIX,youtube
+  - DOMAIN-WILDCARD,youtube.*
+  - DOMAIN-WILDCARD,youtube.*.*
+  - DOMAIN-WILDCARD,youtube.com.*
+
+  # ================================
+  # YouTube 关键词
+  # ================================
+
+  - DOMAIN-KEYWORD,youtube
+  - DOMAIN-KEYWORD,googlevideo
+
+  # ================================
+  # YouTube App / YouTube Music UA
+  # ================================
+
+  - USER-AGENT,*YouTubeMusic*
+  - USER-AGENT,*com.google.ios.youtubemusic*
+  - USER-AGENT,*youtube*
+  - USER-AGENT,YouTube*
+  - USER-AGENT,YouTubeMusic*
+  - USER-AGENT,com.google.ios.youtube*
+  - USER-AGENT,com.google.ios.youtubemusic*
+
+  # ================================
+  # YouTube IP 段
+  # ================================
+  # no-resolve：IP 规则无需 DNS 解析，减少误解析和延迟
+
+  - IP-CIDR,172.110.32.0/21,no-resolve
+  - IP-CIDR,216.73.80.0/20,no-resolve
+  - IP-CIDR6,2620:120:e000::/40,no-resolve
+
+  # ================================
+  # 不建议启用的宽泛 Google 规则
+  # ================================
+  # 以下规则可能会误伤 Gemini / Google AI / Google 登录 / Google Drive / Google API
+  # 如无特殊需求，不建议取消注释
+  #
+  # HOST-SUFFIX,googleapis.com,YouTube
+  # HOST-SUFFIX,googleusercontent.com,YouTube
+  # HOST-SUFFIX,gstatic.com,YouTube
+
+  # Total Raw Rules: 47
+  # Converted Rules: 47
+  # Unsupported Rules: 0
