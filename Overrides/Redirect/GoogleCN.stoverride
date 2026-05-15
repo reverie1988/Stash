@@ -1,0 +1,47 @@
+name: GoogleCN 自动中文跳转
+desc: g.cn / google.cn / maps.google.cn 跳转到 Google 国际站，并自动添加 hl=zh-CN
+
+http:
+  mitm:
+    - g.cn
+    - google.cn
+    - www.google.cn
+    - google.com
+    - www.google.com
+    - maps.google.com
+    - maps.google.cn
+    - ditu.google.cn
+
+  script:
+    # g.cn / google.cn / www.google.cn → www.google.com
+    - match: '^https?:\/\/(?:www\.)?(?:g|google)\.cn(?:\/.*)?$'
+      name: google-cn-redirect
+      type: request
+      require-body: false
+      timeout: 10
+
+    # maps.google.cn / ditu.google.cn → maps.google.com
+    - match: '^https?:\/\/(?:ditu|maps)\.google\.cn(?:\/.*)?$'
+      name: google-cn-redirect
+      type: request
+      require-body: false
+      timeout: 10
+
+    # google.com 自动补 hl=zh-CN
+    - match: '^https?:\/\/(?:www\.)?google\.com(?!.*[?&]hl=zh-CN)(?:\/.*)?$'
+      name: google-cn-redirect
+      type: request
+      require-body: false
+      timeout: 10
+
+    # maps.google.com 自动补 hl=zh-CN
+    - match: '^https?:\/\/maps\.google\.com(?!.*[?&]hl=zh-CN)(?:\/.*)?$'
+      name: google-cn-redirect
+      type: request
+      require-body: false
+      timeout: 10
+
+script-providers:
+  google-cn-redirect:
+    url: https://raw.githubusercontent.com/reverie1988/QX/main/Stash/Scripts/Google_Chinese_Redirect_Stash.js
+    interval: 86400
