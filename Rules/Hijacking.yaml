@@ -1,30 +1,7 @@
 payload:
-  # Converted from Quantumult X Filter
-  # Rule Name: Apple
-  # Converted At: 2026-05-15 21:41:28
-
   # NAME: Hijacking
-  # AUTHOR: steak
-  # TYPE: Quantumult X Filter
   # DESCRIPTION: 运营商劫持 / 流氓软件推广 / 恶意跳转 / 广告劫持拦截规则
-  # SOURCE: Based on blackmatrix7/ios_rule_script Hijacking rules
-  # UPDATED: 2026-05-11
-  #
-  # ================================
-  # 使用说明
-  # ================================
-  # 1. 文件名建议：Hijacking.list
-  # 2. 适用于：Quantumult X [filter_remote]
-  # 3. 推荐使用 force-policy=reject，不建议新建代理策略组
-  # 4. 这不是完整广告过滤规则，它主要用于防运营商劫持、恶意跳转、流氓软件下载站、广告注入
-  # 5. IP-CIDR 已追加 no-resolve，避免不必要 DNS 解析
-  #
-  # QX 推荐远程订阅：
-  # https://raw.githubusercontent.com/你的用户名/你的仓库/main/Rules/Hijacking.list, tag=Hijacking, force-policy=reject, update-interval=86400, opt-parser=false, enabled=true
-  #
-  # 如果你想做一个可开关的策略组，也可以建一个 Guard/Hijacking 策略组，里面放 REJECT 和 DIRECT，
-  # 然后把 force-policy=Guard；平时选 REJECT，误杀时切到 DIRECT。
-  #
+  # UPDATED: 2026-05-15
   # ================================
   # 规则统计
   # ================================
@@ -266,7 +243,3 @@ payload:
   - IP-CIDR,61.160.200.242/32,no-resolve
   - IP-CIDR,61.160.200.252/32,no-resolve
   - IP-CIDR,61.174.50.214/32,no-resolve
-
-  # Total Raw Rules: 228
-  # Converted Rules: 228
-  # Unsupported Rules: 0
