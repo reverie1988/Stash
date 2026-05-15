@@ -43,5 +43,5 @@ http:
 
 script-providers:
   google-cn-redirect:
-    url: https://raw.githubusercontent.com/reverie1988/QX/main/Stash/Scripts/Google_Chinese_Redirect_Stash.js
+    url: https://raw.githubusercontent.com/reverie1988/Stash/main/Scripts/Google_Chinese_Redirect_Stash.js
     interval: 86400
