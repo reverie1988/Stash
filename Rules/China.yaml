@@ -1,0 +1,229 @@
+payload:
+  # Converted from Quantumult X Filter
+  # Rule Name: Apple
+  # Converted At: 2026-05-15 21:34:09
+
+  # NAME: China
+  # AUTHOR: steak
+  # TYPE: Quantumult X Filter
+  # DESCRIPTION: 国内域名 / 国内常用服务直连规则，轻量日常版
+  # UPDATED: 2026-05-11
+  #
+  # ================================
+  # 使用说明
+  # ================================
+  # 1. 文件名建议：China.list
+  # 2. 适用于：Quantumult X [filter_remote]
+  # 3. 策略：direct
+  # 4. 这是轻量日常版，包含国内常用 App / 支付 / 视频 / 出行 / 电商 / 云服务
+  # 5. 不建议把这份放在 Apple / YouTube / Netflix / Disney 等专用规则前面
+  #
+  # QX 远程订阅示例：
+  # https://raw.githubusercontent.com/你的用户名/你的仓库/main/Rules/China.list, tag=China, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
+  #
+  # ================================
+  # 规则内容
+  # ================================
+  - DOMAIN-SUFFIX,cn
+  - DOMAIN-SUFFIX,中国
+  - DOMAIN-SUFFIX,公司
+  - DOMAIN-SUFFIX,网络
+  # 腾讯 / 微信 / QQ
+  - DOMAIN-SUFFIX,qq.com
+  - DOMAIN-SUFFIX,wechat.com
+  - DOMAIN-SUFFIX,weixin.qq.com
+  - DOMAIN-SUFFIX,weixin.com
+  - DOMAIN-SUFFIX,gtimg.com
+  - DOMAIN-SUFFIX,qpic.cn
+  - DOMAIN-SUFFIX,tenpay.com
+  - DOMAIN-SUFFIX,foxmail.com
+  - DOMAIN-SUFFIX,myqcloud.com
+  - DOMAIN-SUFFIX,tencent.com
+  - DOMAIN-SUFFIX,tencent-cloud.com
+  - DOMAIN-SUFFIX,tencent-cloud.net
+  - DOMAIN-SUFFIX,qcloud.com
+  - DOMAIN-SUFFIX,servicewechat.com
+  # 阿里 / 淘宝 / 支付宝
+  - DOMAIN-SUFFIX,alipay.com
+  - DOMAIN-SUFFIX,alipayobjects.com
+  - DOMAIN-SUFFIX,alipaydns.com
+  - DOMAIN-SUFFIX,aliyun.com
+  - DOMAIN-SUFFIX,aliyuncs.com
+  - DOMAIN-SUFFIX,aliyuncdn.com
+  - DOMAIN-SUFFIX,alicdn.com
+  - DOMAIN-SUFFIX,alibaba.com
+  - DOMAIN-SUFFIX,alibabacloud.com
+  - DOMAIN-SUFFIX,taobao.com
+  - DOMAIN-SUFFIX,tmall.com
+  - DOMAIN-SUFFIX,tmwsg.com
+  - DOMAIN-SUFFIX,mmstat.com
+  - DOMAIN-SUFFIX,cainiao.com
+  - DOMAIN-SUFFIX,ele.me
+  - DOMAIN-SUFFIX,elemecdn.com
+  - DOMAIN-SUFFIX,hellobike.com
+  - DOMAIN-SUFFIX,1688.com
+  - DOMAIN-SUFFIX,fliggy.com
+  - DOMAIN-SUFFIX,feizhu.com
+  - DOMAIN-SUFFIX,aliyundrive.com
+  - DOMAIN-SUFFIX,alipan.com
+  # 京东
+  - DOMAIN-SUFFIX,jd.com
+  - DOMAIN-SUFFIX,jd.hk
+  - DOMAIN-SUFFIX,jdpay.com
+  - DOMAIN-SUFFIX,360buyimg.com
+  - DOMAIN-SUFFIX,360buy.com
+  - DOMAIN-SUFFIX,jcloud.com
+  # 百度
+  - DOMAIN-SUFFIX,baidu.com
+  - DOMAIN-SUFFIX,bdimg.com
+  - DOMAIN-SUFFIX,bdstatic.com
+  - DOMAIN-SUFFIX,bcebos.com
+  - DOMAIN-SUFFIX,baidubce.com
+  - DOMAIN-SUFFIX,baidupcs.com
+  - DOMAIN-SUFFIX,baidupan.com
+  - DOMAIN-SUFFIX,hao123.com
+  # 小米
+  - DOMAIN-SUFFIX,mi.com
+  - DOMAIN-SUFFIX,miui.com
+  - DOMAIN-SUFFIX,xiaomi.com
+  - DOMAIN-SUFFIX,xiaomiyoupin.com
+  - DOMAIN-SUFFIX,mijia.tech
+  # 华为 / 荣耀
+  - DOMAIN-SUFFIX,huawei.com
+  - DOMAIN-SUFFIX,vmall.com
+  - DOMAIN-SUFFIX,huaweicloud.com
+  - DOMAIN-SUFFIX,myhuaweicloud.com
+  - DOMAIN-SUFFIX,hicloud.com
+  - DOMAIN-SUFFIX,honor.com
+  # OPPO / vivo / 一加
+  - DOMAIN-SUFFIX,oppo.com
+  - DOMAIN-SUFFIX,oppo.cn
+  - DOMAIN-SUFFIX,coloros.com
+  - DOMAIN-SUFFIX,vivo.com
+  - DOMAIN-SUFFIX,vivo.com.cn
+  - DOMAIN-SUFFIX,oneplus.com
+  # 生活服务 / 地图 / 出行
+  - DOMAIN-SUFFIX,meituan.com
+  - DOMAIN-SUFFIX,dianping.com
+  - DOMAIN-SUFFIX,dpfile.com
+  - DOMAIN-SUFFIX,maoyan.com
+  - DOMAIN-SUFFIX,didi.cn
+  - DOMAIN-SUFFIX,didiglobal.com
+  - DOMAIN-SUFFIX,didichuxing.com
+  - DOMAIN-SUFFIX,didistatic.com
+  - DOMAIN-SUFFIX,amap.com
+  - DOMAIN-SUFFIX,autonavi.com
+  - DOMAIN-SUFFIX,amapauto.com
+  - DOMAIN-SUFFIX,ctrip.com
+  - DOMAIN-SUFFIX,qunar.com
+  - DOMAIN-SUFFIX,elong.com
+  - DOMAIN-SUFFIX,autohome.com.cn
+  - DOMAIN-SUFFIX,che168.com
+  - DOMAIN-SUFFIX,dongchedi.com
+  # 政务 / 公共服务 / 银行支付
+  - DOMAIN-SUFFIX,12306.cn
+  - DOMAIN-SUFFIX,12306.com
+  - DOMAIN-SUFFIX,chinatax.gov.cn
+  - DOMAIN-SUFFIX,gov.cn
+  - DOMAIN-SUFFIX,95516.com
+  - DOMAIN-SUFFIX,95516.net
+  - DOMAIN-SUFFIX,unionpay.com
+  - DOMAIN-SUFFIX,chinaunionpay.com
+  - DOMAIN-SUFFIX,icbc.com.cn
+  - DOMAIN-SUFFIX,ccb.com
+  - DOMAIN-SUFFIX,abchina.com
+  - DOMAIN-SUFFIX,bankofchina.com
+  - DOMAIN-SUFFIX,bankcomm.com
+  - DOMAIN-SUFFIX,cmbchina.com
+  - DOMAIN-SUFFIX,psbc.com
+  # 国内媒体 / 视频 / 音乐
+  - DOMAIN-SUFFIX,bilibili.com
+  - DOMAIN-SUFFIX,bilibili.tv
+  - DOMAIN-SUFFIX,biliapi.com
+  - DOMAIN-SUFFIX,biliapi.net
+  - DOMAIN-SUFFIX,hdslb.com
+  - DOMAIN-SUFFIX,acgvideo.com
+  - DOMAIN-SUFFIX,b23.tv
+  - DOMAIN-SUFFIX,bilivideo.com
+  - DOMAIN-SUFFIX,bilivideo.net
+  - DOMAIN-SUFFIX,douyu.com
+  - DOMAIN-SUFFIX,douyu.tv
+  - DOMAIN-SUFFIX,huya.com
+  - DOMAIN-SUFFIX,iqiyi.com
+  - DOMAIN-SUFFIX,qiyi.com
+  - DOMAIN-SUFFIX,iqiyipic.com
+  - DOMAIN-SUFFIX,youku.com
+  - DOMAIN-SUFFIX,mgtv.com
+  - DOMAIN-SUFFIX,le.com
+  - DOMAIN-SUFFIX,pptv.com
+  - DOMAIN-SUFFIX,kuwo.cn
+  - DOMAIN-SUFFIX,kugou.com
+  - DOMAIN-SUFFIX,music.163.com
+  - DOMAIN-SUFFIX,163.com
+  - DOMAIN-SUFFIX,126.net
+  - DOMAIN-SUFFIX,126.com
+  - DOMAIN-SUFFIX,netease.com
+  # 抖音 / 字节跳动
+  - DOMAIN-SUFFIX,douyin.com
+  - DOMAIN-SUFFIX,douyincdn.com
+  - DOMAIN-SUFFIX,douyinpic.com
+  - DOMAIN-SUFFIX,douyinstatic.com
+  - DOMAIN-SUFFIX,douyinvod.com
+  - DOMAIN-SUFFIX,douyinliving.com
+  - DOMAIN-SUFFIX,amemv.com
+  - DOMAIN-SUFFIX,snssdk.com
+  - DOMAIN-SUFFIX,toutiao.com
+  - DOMAIN-SUFFIX,toutiaostatic.com
+  - DOMAIN-SUFFIX,toutiaoimg.com
+  - DOMAIN-SUFFIX,toutiaovod.com
+  - DOMAIN-SUFFIX,byteimg.com
+  - DOMAIN-SUFFIX,bytecdn.cn
+  - DOMAIN-SUFFIX,bytegoofy.com
+  - DOMAIN-SUFFIX,bytedance.com
+  - DOMAIN-SUFFIX,bytedance.net
+  - DOMAIN-SUFFIX,bytedanceapi.com
+  - DOMAIN-SUFFIX,bytedns.net
+  - DOMAIN-SUFFIX,ibyteimg.com
+  - DOMAIN-SUFFIX,pstatp.com
+  - DOMAIN-SUFFIX,ixigua.com
+  - DOMAIN-SUFFIX,ixgvideo.com
+  - DOMAIN-SUFFIX,huoshan.com
+  - DOMAIN-SUFFIX,huoshanzhibo.com
+  - DOMAIN-SUFFIX,dcarapi.com
+  - DOMAIN-SUFFIX,dcarimg.com
+  # 新浪微博
+  - DOMAIN-SUFFIX,weibo.com
+  - DOMAIN-SUFFIX,weibo.cn
+  - DOMAIN-SUFFIX,sina.com.cn
+  - DOMAIN-SUFFIX,sina.com
+  - DOMAIN-SUFFIX,sinaimg.cn
+  - DOMAIN-SUFFIX,sinaimg.com
+  - DOMAIN-KEYWORD,weibo
+  # 常见国内开发 / 下载 / 邮箱 / 社区
+  - DOMAIN-SUFFIX,csdn.com
+  - DOMAIN-SUFFIX,csdn.net
+  - DOMAIN-SUFFIX,gitee.com
+  - DOMAIN-SUFFIX,coding.net
+  - DOMAIN-SUFFIX,oschina.net
+  - DOMAIN-SUFFIX,jianshu.com
+  - DOMAIN-SUFFIX,zhihu.com
+  - DOMAIN-SUFFIX,zhimg.com
+  - DOMAIN-SUFFIX,douban.com
+  - DOMAIN-SUFFIX,doubanio.com
+  - DOMAIN-SUFFIX,smzdm.com
+  - DOMAIN-SUFFIX,coolapk.com
+  - DOMAIN-SUFFIX,sspai.com
+  # 国内常见 DNS / CDN
+  - DOMAIN-SUFFIX,dnspod.cn
+  - DOMAIN-SUFFIX,dnspod.com
+  - DOMAIN-SUFFIX,doh.pub
+  - DOMAIN-SUFFIX,dns.pub
+  - DOMAIN-SUFFIX,alidns.com
+  - DOMAIN-SUFFIX,kunlunca.com
+  - DOMAIN-SUFFIX,kunlunar.com
+  - DOMAIN-SUFFIX,cdntip.com
+  - DOMAIN-SUFFIX,cdntips.com
+
+  # Total Raw Rules: 185
+  # Converted Rules: 185
+  # Unsupported Rules: 0
