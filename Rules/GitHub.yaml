@@ -1,28 +1,7 @@
 payload:
-  # Converted from Quantumult X Filter
-  # Rule Name: Apple
-  # Converted At: 2026-05-15 21:40:56
-
   # NAME: GitHub
-  # AUTHOR: steak
-  # TYPE: Quantumult X Filter
   # DESCRIPTION: GitHub / GitHubusercontent / GitHub Actions / GitHub Releases / GitHub Copilot / GitHub Container Registry / NPM 分流规则
-  # SOURCE: Based on blackmatrix7/ios_rule_script GitHub rules + GitHub official Copilot allowlist
-  # UPDATED: 2026-05-11
-  #
-  # ================================
-  # 使用说明
-  # ================================
-  # 1. 文件名建议：GitHub.list
-  # 2. 适用于：Quantumult X [filter_remote]
-  # 3. 策略组名称：GitHub
-  # 4. 这份已经是增强版，不需要再单独做 GitHub_plus.list
-  # 5. 包含你原有的本地 GitHub 规则
-  # 6. 适合 GitHub 网页、Raw、Gist、Release 下载、Actions、Copilot、GHCR、NPM
-  #
-  # QX 远程订阅示例：
-  # https://raw.githubusercontent.com/你的用户名/你的仓库/main/Rules/GitHub.list, tag=GitHub, force-policy=GitHub, update-interval=86400, opt-parser=false, enabled=true
-  #
+  # UPDATED: 2026-05-15
   # ================================
   # 规则说明
   # ================================
@@ -155,7 +134,3 @@ payload:
   # ================================
 
   - DOMAIN-KEYWORD,github
-
-  # Total Raw Rules: 59
-  # Converted Rules: 59
-  # Unsupported Rules: 0
