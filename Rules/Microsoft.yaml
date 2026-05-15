@@ -1,0 +1,95 @@
+payload:
+  # Converted from Quantumult X Filter
+  # Rule Name: Apple
+  # Converted At: 2026-05-15 21:42:00
+
+  # NAME: Microsoft
+  # AUTHOR: steak
+  # TYPE: Quantumult X Filter
+  # DESCRIPTION: Microsoft / Office / Outlook / OneDrive / Azure / Skype / Edge / Visual Studio 分流规则
+  # SOURCE: Split from GlobalServices.list
+  # UPDATED: 2026-05-11
+  #
+  # ================================
+  # 使用说明
+  # ================================
+  # 1. 文件名：Microsoft.list
+  # 2. 适用于：Quantumult X [filter_remote]
+  # 3. 策略组名称：微软服务
+  # 4. 本文件由原 GlobalServices.list 拆分，便于后续单独维护
+  # 5. IP-CIDR / IP6-CIDR 已追加 no-resolve
+  #
+  # QX 远程订阅示例：
+  # https://raw.githubusercontent.com/reverie1988/QX/refs/heads/main/Rules/Microsoft.list, tag=Microsoft, force-policy=微软服务, update-interval=172800, opt-parser=false, enabled=true
+  #
+  # ================================
+  # 规则统计
+  # ================================
+  # HOST: 0
+  # HOST-SUFFIX: 46
+  # HOST-KEYWORD: 3
+  # USER-AGENT: 0
+  # IP-CIDR: 0
+  # IP6-CIDR: 0
+  # IP-ASN: 0
+  # TOTAL: 49
+  #
+  # ================================
+  # 规则内容
+  # ================================
+  # Microsoft
+  # ================================
+
+  - DOMAIN-SUFFIX,microsoft.com
+  - DOMAIN-SUFFIX,microsoft.net
+  - DOMAIN-SUFFIX,microsoftonline.com
+  - DOMAIN-SUFFIX,microsoftonline-p.com
+  - DOMAIN-SUFFIX,microsoftstore.com
+  - DOMAIN-SUFFIX,microsoft365.com
+  - DOMAIN-SUFFIX,office.com
+  - DOMAIN-SUFFIX,office.net
+  - DOMAIN-SUFFIX,office365.com
+  - DOMAIN-SUFFIX,officeppe.net
+  - DOMAIN-SUFFIX,live.com
+  - DOMAIN-SUFFIX,live.net
+  - DOMAIN-SUFFIX,outlook.com
+  - DOMAIN-SUFFIX,outlook.office.com
+  - DOMAIN-SUFFIX,hotmail.com
+  - DOMAIN-SUFFIX,msn.com
+  - DOMAIN-SUFFIX,msauth.net
+  - DOMAIN-SUFFIX,msftauth.net
+  - DOMAIN-SUFFIX,msftauthimages.net
+  - DOMAIN-SUFFIX,msftidentity.com
+  - DOMAIN-SUFFIX,msidentity.com
+  - DOMAIN-SUFFIX,windows.net
+  - DOMAIN-SUFFIX,windows.com
+  - DOMAIN-SUFFIX,windowsupdate.com
+  - DOMAIN-SUFFIX,azure.com
+  - DOMAIN-SUFFIX,azure.net
+  - DOMAIN-SUFFIX,azureedge.net
+  - DOMAIN-SUFFIX,azurewebsites.net
+  - DOMAIN-SUFFIX,azurefd.net
+  - DOMAIN-SUFFIX,trafficmanager.net
+  - DOMAIN-SUFFIX,onedrive.com
+  - DOMAIN-SUFFIX,onedrive.live.com
+  - DOMAIN-SUFFIX,sharepoint.com
+  - DOMAIN-SUFFIX,sharepointonline.com
+  - DOMAIN-SUFFIX,skype.com
+  - DOMAIN-SUFFIX,skypeassets.com
+  - DOMAIN-SUFFIX,sfx.ms
+  - DOMAIN-SUFFIX,msedge.net
+  - DOMAIN-SUFFIX,edge.microsoft.com
+  - DOMAIN-SUFFIX,bing.com
+  - DOMAIN-SUFFIX,bing.net
+  - DOMAIN-SUFFIX,bingapis.com
+  - DOMAIN-SUFFIX,visualstudio.com
+  - DOMAIN-SUFFIX,vsassets.io
+  - DOMAIN-SUFFIX,vscode.dev
+  - DOMAIN-SUFFIX,github.dev
+  - DOMAIN-KEYWORD,microsoft
+  - DOMAIN-KEYWORD,onedrive
+  - DOMAIN-KEYWORD,outlook
+
+  # Total Raw Rules: 49
+  # Converted Rules: 49
+  # Unsupported Rules: 0
