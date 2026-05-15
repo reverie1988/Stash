@@ -1,28 +1,7 @@
 payload:
-  # Converted from Quantumult X Filter
-  # Rule Name: Apple
-  # Converted At: 2026-05-15 21:43:51
-
   # NAME: YouTube
-  # AUTHOR: steak
-  # TYPE: Quantumult X Filter
   # DESCRIPTION: YouTube / YouTube Music / YouTube Kids / Googlevideo / ytimg 相关分流规则
-  # SOURCE: Based on blackmatrix7/ios_rule_script YouTube rules
-  # UPDATED: 2026-05-11
-  #
-  # ================================
-  # 使用说明
-  # ================================
-  # 1. 文件名建议：YouTube.list
-  # 2. 适用于：Quantumult X [filter_remote]
-  # 3. 策略组名称：YouTube
-  # 4. 如果你的策略组不是 YouTube，请在 QX 的 force-policy 中指定实际策略组
-  # 5. 不建议把整个 googleapis.com / googleusercontent.com / gstatic.com 全部放进 YouTube
-  #    否则可能会影响 Gemini / Google AI / Google 登录 / Google 其他服务
-  #
-  # QX 远程订阅示例：
-  # https://raw.githubusercontent.com/你的用户名/你的仓库/main/Rules/YouTube.list, tag=YouTube, force-policy=YouTube, update-interval=86400, opt-parser=false, enabled=true
-  #
+  # UPDATED: 2026-05-15
   # ================================
   # 规则统计：精简增强版
   # ================================
@@ -139,6 +118,3 @@ payload:
   # HOST-SUFFIX,googleusercontent.com,YouTube
   # HOST-SUFFIX,gstatic.com,YouTube
 
-  # Total Raw Rules: 47
-  # Converted Rules: 47
-  # Unsupported Rules: 0
