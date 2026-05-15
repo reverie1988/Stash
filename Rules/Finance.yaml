@@ -284,7 +284,3 @@ payload:
   - DOMAIN-SUFFIX,ipfs.io
   - DOMAIN-SUFFIX,ipfs.tech
   - DOMAIN-SUFFIX,pinata.cloud
-
-  # Total Raw Rules: 208
-  # Converted Rules: 208
-  # Unsupported Rules: 0
