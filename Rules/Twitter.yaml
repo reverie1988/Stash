@@ -1,0 +1,81 @@
+payload:
+  # Converted from Quantumult X Filter
+  # Rule Name: Apple
+  # Converted At: 2026-05-15 21:43:36
+
+  # NAME: Twitter
+  # AUTHOR: steak
+  # TYPE: Quantumult X Filter
+  # DESCRIPTION: Twitter / X 分流规则
+  # SOURCE: Split from GlobalServices.list
+  # UPDATED: 2026-05-11
+  #
+  # ================================
+  # 使用说明
+  # ================================
+  # 1. 文件名：Twitter.list
+  # 2. 适用于：Quantumult X [filter_remote]
+  # 3. 策略组名称：Twitter
+  # 4. 本文件由原 GlobalServices.list 拆分，便于后续单独维护
+  # 5. IP-CIDR / IP6-CIDR 已追加 no-resolve
+  #
+  # QX 远程订阅示例：
+  # https://raw.githubusercontent.com/reverie1988/QX/refs/heads/main/Rules/Twitter.list, tag=Twitter, force-policy=Twitter, update-interval=172800, opt-parser=false, enabled=true
+  #
+  # ================================
+  # 规则统计
+  # ================================
+  # HOST: 0
+  # HOST-SUFFIX: 26
+  # HOST-KEYWORD: 2
+  # USER-AGENT: 0
+  # IP-CIDR: 6
+  # IP6-CIDR: 0
+  # IP-ASN: 0
+  # TOTAL: 34
+  #
+  # ================================
+  # 规则内容
+  # ================================
+  # Twitter / X
+  # ================================
+  - DOMAIN-SUFFIX,ads-twitter.com
+  - DOMAIN-SUFFIX,cms-twdigitalassets.com
+  - DOMAIN-SUFFIX,grok.com
+  - DOMAIN-SUFFIX,periscope.tv
+  - DOMAIN-SUFFIX,pscp.tv
+  - DOMAIN-SUFFIX,t.co
+  - DOMAIN-SUFFIX,tellapart.com
+  - DOMAIN-SUFFIX,tweetdeck.com
+  - DOMAIN-SUFFIX,twimg.co
+  - DOMAIN-SUFFIX,twimg.com
+  - DOMAIN-SUFFIX,twimg.org
+  - DOMAIN-SUFFIX,twitpic.com
+  - DOMAIN-SUFFIX,twitter.biz
+  - DOMAIN-SUFFIX,twitter.com
+  - DOMAIN-SUFFIX,twitter.jp
+  - DOMAIN-SUFFIX,twittercommunity.com
+  - DOMAIN-SUFFIX,twitterflightschool.com
+  - DOMAIN-SUFFIX,twitterinc.com
+  - DOMAIN-SUFFIX,twitteroauth.com
+  - DOMAIN-SUFFIX,twitterstat.us
+  - DOMAIN-SUFFIX,twtrdns.net
+  - DOMAIN-SUFFIX,twttr.com
+  - DOMAIN-SUFFIX,twttr.net
+  - DOMAIN-SUFFIX,twvid.com
+  - DOMAIN-SUFFIX,vine.co
+  - DOMAIN-SUFFIX,x.com
+  - DOMAIN-KEYWORD,twitter
+  - DOMAIN-KEYWORD,twimg
+  - IP-CIDR,192.133.76.0/22,no-resolve
+  - IP-CIDR,199.59.148.0/22,no-resolve
+  - IP-CIDR,199.96.56.0/21,no-resolve
+  - IP-CIDR,202.160.128.0/22,no-resolve
+  - IP-CIDR,209.237.192.0/19,no-resolve
+  - IP-CIDR,69.195.160.0/19,no-resolve
+
+  # ================================
+
+  # Total Raw Rules: 34
+  # Converted Rules: 34
+  # Unsupported Rules: 0
