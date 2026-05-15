@@ -1,15 +1,4 @@
 payload:
-  # Converted from Quantumult X Filter
-  # Rule Name: Apple
-  # Converted At: 2026-05-15 21:35:51
-
-  # NAME: ChinaIPs
-  # AUTHOR: blackmatrix7
-  # REPO: https://github.com/blackmatrix7/ios_rule_script
-  # UPDATED: 2026-05-10 02:21:56
-  # IP-CIDR: 17507
-  # IP6-CIDR: 5424
-  # TOTAL: 22931
   - IP-CIDR,1.0.1.0/24
   - IP-CIDR,1.0.2.0/23
   - IP-CIDR,1.0.32.0/19
@@ -22941,7 +22930,3 @@ payload:
   - IP-CIDR6,2c0f:f7a8:9041::/48
   - IP-CIDR6,2c0f:f7a8:9211::/48
   - IP-CIDR6,2c0f:f7a8:9220::/48
-
-  # Total Raw Rules: 22931
-  # Converted Rules: 22931
-  # Unsupported Rules: 0
