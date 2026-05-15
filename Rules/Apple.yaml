@@ -1896,7 +1896,3 @@ payload:
   - IP-CIDR6,2403:300::/32,no-resolve
   - IP-CIDR6,2620:149::/32,no-resolve
   - IP-CIDR6,2a01:b740::/32,no-resolve
-
-  # Total Raw Rules: 1881
-  # Converted Rules: 1881
-  # Unsupported Rules: 0
