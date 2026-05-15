@@ -1,27 +1,7 @@
 payload:
-  # Converted from Quantumult X Filter
-  # Rule Name: Apple
-  # Converted At: 2026-05-15 21:42:35
-
   # NAME: PikPak
-  # AUTHOR: steak
-  # TYPE: Quantumult X Filter
   # DESCRIPTION: PikPak 分流规则
-  # SOURCE: Split from GlobalServices.list
-  # UPDATED: 2026-05-11
-  #
-  # ================================
-  # 使用说明
-  # ================================
-  # 1. 文件名：PikPak.list
-  # 2. 适用于：Quantumult X [filter_remote]
-  # 3. 策略组名称：PikPak
-  # 4. 本文件由原 GlobalServices.list 拆分，便于后续单独维护
-  # 5. IP-CIDR / IP6-CIDR 已追加 no-resolve
-  #
-  # QX 远程订阅示例：
-  # https://raw.githubusercontent.com/reverie1988/QX/refs/heads/main/Rules/PikPak.list, tag=PikPak, force-policy=PikPak, update-interval=172800, opt-parser=false, enabled=true
-  #
+  # UPDATED: 2026-05-15
   # ================================
   # 规则统计
   # ================================
@@ -53,6 +33,4 @@ payload:
 
   # ================================
 
-  # Total Raw Rules: 10
-  # Converted Rules: 10
-  # Unsupported Rules: 0
+
