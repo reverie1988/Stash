@@ -1,27 +1,7 @@
 payload:
-  # Converted from Quantumult X Filter
-  # Rule Name: Apple
-  # Converted At: 2026-05-15 21:43:09
-
   # NAME: Spotify
-  # AUTHOR: steak
-  # TYPE: Quantumult X Filter
   # DESCRIPTION: 音乐 / 播客 / CDN 分流规则
-  # SOURCE: Split from GlobalServices.list
-  # UPDATED: 2026-05-11
-  #
-  # ================================
-  # 使用说明
-  # ================================
-  # 1. 文件名：Spotify.list
-  # 2. 适用于：Quantumult X [filter_remote]
-  # 3. 策略组名称：Spotify
-  # 4. 本文件由原 GlobalServices.list 拆分，便于后续单独维护
-  # 5. IP-CIDR / IP6-CIDR 已追加 no-resolve
-  #
-  # QX 远程订阅示例：
-  # https://raw.githubusercontent.com/reverie1988/QX/refs/heads/main/Rules/Spotify.list, tag=Spotify, force-policy=Spotify, update-interval=172800, opt-parser=false, enabled=true
-  #
+  # UPDATED: 2026-05-15
   # ================================
   # 规则统计
   # ================================
@@ -75,7 +55,3 @@ payload:
   # HOST-SUFFIX,cdn.branch.io,Spotify
 
   # ================================
-
-  # Total Raw Rules: 30
-  # Converted Rules: 30
-  # Unsupported Rules: 0
