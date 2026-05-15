@@ -1,0 +1,137 @@
+payload:
+  # Converted from Quantumult X Filter
+  # Rule Name: Apple
+  # Converted At: 2026-05-15 21:40:42
+
+  # NAME: Game
+  # AUTHOR: steak
+  # TYPE: Quantumult X Filter
+  # DESCRIPTION: Steam / Epic / PlayStation / Nintendo / Battle.net / Ubisoft / EA / Xbox 等游戏平台分流规则
+  # SOURCE: Split from GlobalServices.list
+  # UPDATED: 2026-05-11
+  #
+  # ================================
+  # 使用说明
+  # ================================
+  # 1. 文件名：Game.list
+  # 2. 适用于：Quantumult X [filter_remote]
+  # 3. 策略组名称：游戏平台
+  # 4. 本文件由原 GlobalServices.list 拆分，便于后续单独维护
+  # 5. IP-CIDR / IP6-CIDR 已追加 no-resolve
+  #
+  # QX 远程订阅示例：
+  # https://raw.githubusercontent.com/reverie1988/QX/refs/heads/main/Rules/Game.list, tag=Game, force-policy=游戏平台, update-interval=172800, opt-parser=false, enabled=true
+  #
+  # ================================
+  # 规则统计
+  # ================================
+  # HOST: 8
+  # HOST-SUFFIX: 61
+  # HOST-KEYWORD: 7
+  # USER-AGENT: 0
+  # IP-CIDR: 0
+  # IP6-CIDR: 0
+  # IP-ASN: 0
+  # TOTAL: 76
+  #
+  # ================================
+  # 规则内容
+  # ================================
+  # 游戏平台
+  # ================================
+
+  # Steam / Valve
+  - DOMAIN,steambroadcast.akamaized.net
+  - DOMAIN,steamcdn-a.akamaihd.net
+  - DOMAIN,steamcommunity-a.akamaihd.net
+  - DOMAIN,steammobile.akamaized.net
+  - DOMAIN,steampipe.akamaized.net
+  - DOMAIN,steamstore-a.akamaihd.net
+  - DOMAIN,steamusercontent-a.akamaihd.net
+  - DOMAIN,steamuserimages-a.akamaihd.net
+  - DOMAIN-SUFFIX,steamcommunity.com
+  - DOMAIN-SUFFIX,steampowered.com
+  - DOMAIN-SUFFIX,steamstatic.com
+  - DOMAIN-SUFFIX,steamcontent.com
+  - DOMAIN-SUFFIX,steamgames.com
+  - DOMAIN-SUFFIX,steam-chat.com
+  - DOMAIN-SUFFIX,steam.tv
+  - DOMAIN-SUFFIX,steamdeck.com
+  - DOMAIN-SUFFIX,steamstat.us
+  - DOMAIN-SUFFIX,valvesoftware.com
+  - DOMAIN-SUFFIX,s.team
+  - DOMAIN-KEYWORD,steam
+
+  # Epic Games
+  - DOMAIN-SUFFIX,epicgames.com
+  - DOMAIN-SUFFIX,epicgames.dev
+  - DOMAIN-SUFFIX,epicgamescdn.com
+  - DOMAIN-SUFFIX,epicgames-download1.akamaized.net
+  - DOMAIN-SUFFIX,unrealengine.com
+  - DOMAIN-SUFFIX,fortnite.com
+  - DOMAIN-KEYWORD,epicgames
+  - DOMAIN-KEYWORD,fortnite
+
+  # PlayStation / Sony
+  - DOMAIN-SUFFIX,playstation.com
+  - DOMAIN-SUFFIX,playstation.net
+  - DOMAIN-SUFFIX,playstationnetwork.com
+  - DOMAIN-SUFFIX,sonyentertainmentnetwork.com
+  - DOMAIN-SUFFIX,sony.com
+  - DOMAIN-SUFFIX,sony.net
+  - DOMAIN-KEYWORD,playstation
+
+  # Nintendo
+  - DOMAIN-SUFFIX,nintendo.com
+  - DOMAIN-SUFFIX,nintendo.net
+  - DOMAIN-SUFFIX,nintendo-europe.com
+  - DOMAIN-SUFFIX,nintendowifi.net
+  - DOMAIN-SUFFIX,nintendo.co.jp
+  - DOMAIN-SUFFIX,nintendo.com.hk
+  - DOMAIN-SUFFIX,nintendo.com.au
+  - DOMAIN-SUFFIX,nintendo.co.uk
+
+  # Blizzard / Battle.net
+  - DOMAIN-SUFFIX,battle.net
+  - DOMAIN-SUFFIX,battlenet.com
+  - DOMAIN-SUFFIX,blizzard.com
+  - DOMAIN-SUFFIX,blzstatic.cn
+  - DOMAIN-SUFFIX,blzddist1-a.akamaihd.net
+  - DOMAIN-SUFFIX,blzddistkr1-a.akamaihd.net
+  - DOMAIN-SUFFIX,blzmedia-a.akamaihd.net
+  - DOMAIN-SUFFIX,worldofwarcraft.com
+  - DOMAIN-SUFFIX,diablo3.com
+  - DOMAIN-KEYWORD,battle
+  - DOMAIN-KEYWORD,blizzard
+
+  # Ubisoft / EA / Origin / Xbox
+  - DOMAIN-SUFFIX,ubisoft.com
+  - DOMAIN-SUFFIX,ubisoftconnect.com
+  - DOMAIN-SUFFIX,ubi.com
+  - DOMAIN-SUFFIX,uplay.com
+  - DOMAIN-KEYWORD,ubisoft
+  - DOMAIN-SUFFIX,ea.com
+  - DOMAIN-SUFFIX,eac-cdn.com
+  - DOMAIN-SUFFIX,origin.com
+  - DOMAIN-SUFFIX,origin-a.akamaihd.net
+  - DOMAIN-SUFFIX,xbox.com
+  - DOMAIN-SUFFIX,xboxlive.com
+  - DOMAIN-SUFFIX,xboxservices.com
+  - DOMAIN-SUFFIX,xboxab.com
+  - DOMAIN-SUFFIX,gamepass.com
+
+  # GOG / Riot / Rockstar
+  - DOMAIN-SUFFIX,gog.com
+  - DOMAIN-SUFFIX,gog-statics.com
+  - DOMAIN-SUFFIX,riotgames.com
+  - DOMAIN-SUFFIX,riotcdn.net
+  - DOMAIN-SUFFIX,leagueoflegends.com
+  - DOMAIN-SUFFIX,valorant.com
+  - DOMAIN-SUFFIX,rockstargames.com
+  - DOMAIN-SUFFIX,rockstargames.com.cdn.cloudflare.net
+
+  # ================================
+
+  # Total Raw Rules: 76
+  # Converted Rules: 76
+  # Unsupported Rules: 0
