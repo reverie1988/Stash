@@ -204,7 +204,4 @@ payload:
   - DOMAIN-SUFFIX,kunlunar.com
   - DOMAIN-SUFFIX,cdntip.com
   - DOMAIN-SUFFIX,cdntips.com
-
-  # Total Raw Rules: 185
-  # Converted Rules: 185
-  # Unsupported Rules: 0
+  
