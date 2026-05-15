@@ -1,27 +1,7 @@
 payload:
-  # Converted from Quantumult X Filter
-  # Rule Name: Apple
-  # Converted At: 2026-05-15 21:43:25
-
   # NAME: Telegram
-  # AUTHOR: steak
-  # TYPE: Quantumult X Filter
   # DESCRIPTION: Telegram / Telegram X / Telegram Desktop / Telegram Web / 第三方 Telegram 客户端相关分流规则
-  # SOURCE: Based on blackmatrix7/ios_rule_script Telegram rules
-  # UPDATED: 2026-05-11
-  #
-  # ================================
-  # 使用说明
-  # ================================
-  # 1. 文件名建议：Telegram.list
-  # 2. 适用于：Quantumult X [filter_remote]
-  # 3. 策略组名称：Telegram
-  # 4. 如果你的策略组不是 Telegram，请在 QX 的 force-policy 中指定实际策略组
-  # 5. IP-CIDR / IP6-CIDR 后加入 no-resolve，避免触发不必要 DNS 解析
-  #
-  # QX 远程订阅示例：
-  # https://raw.githubusercontent.com/你的用户名/你的仓库/main/Rules/Telegram.list, tag=Telegram, force-policy=Telegram, update-interval=86400, opt-parser=false, enabled=true
-  #
+  # UPDATED: 2026-05-15
   # ================================
   # 规则统计
   # ================================
@@ -104,7 +84,3 @@ payload:
   - IP-ASN,59930
   - IP-ASN,62014
   - IP-ASN,62041
-
-  # Total Raw Rules: 40
-  # Converted Rules: 40
-  # Unsupported Rules: 0
