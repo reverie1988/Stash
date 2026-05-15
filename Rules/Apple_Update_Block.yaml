@@ -100,7 +100,3 @@ payload:
   - DOMAIN-SUFFIX,ocsp-lb.apple.com.akadns.net
   - DOMAIN-SUFFIX,ocsp.apple.com
   - DOMAIN-SUFFIX,ocsp.g.aaplimg.com
-
-  # Total Raw Rules: 92
-  # Converted Rules: 92
-  # Unsupported Rules: 0
