@@ -107,5 +107,5 @@ http:
 
 script-providers:
   ximalaya-json:
-    url: https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/ximalaya_json.js
+    url: https://raw.githubusercontent.com/reverie1988/Stash/main/Scripts/ximalaya_json.js
     interval: 86400
